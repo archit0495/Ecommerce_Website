@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin: 0;
+} 
+
+body{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.727), rgba(0, 0, 0, 0.536)), url(a/granite\ tiles1.jpg);
+    background-size: cover;
+}
+.navbar{
+    width: 85%;
+    margin: 10px 10px 10px 10px ;
+    padding: 20px 0; 
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+}
+.logo{
+    width: 10%;
+    cursor: pointer;
+    float: left;
+}
+.navbar ul li{
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+   
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(255, 252, 252);
+    text-transform: uppercase;
+
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+}
+
+
+.header{
+    width: 10%;
+    color: rgb(255, 252, 252);
+    align-items:center ;
+    width: 100%;
+    position: relative;
+    top: 7%;
+    text-align: center;
+    color: white;
+}
+
+.marbles{
+    float: left;
+    width: 39vw;
+    height: 45vh;
+    background-size: contain;
+    background-image: url(images/marble1.jpg);
+    margin-top: 5vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.granite{
+    float: left;
+    width: 35vw;
+    height: 32vh;
+    background-size: contain;
+    background-image: url(images/granite1.jpg);
+    margin-top: 5vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.ceramic{
+    float: left;
+    width: 15vw;
+    height: 45vh;
+    background-size: contain;
+    background-image: url(images/ceramic1.jpeg);
+    margin-top: 5vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.para-1{
+    font-family: elegante;
+    color: white;
+    text-align: center ;
+    font-size: x-large;
+    padding-left: 5vw;
+    padding-right: 7vw;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 5px 5px;
+    border-radius: 24px;
+    font-weight: bold;
+    border: 1px solid #009688;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    float: center;
+    overflow: hidden;
+}
+
+.content{    
+    width: 100%;
+    position: absolute;
+    top: 95%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;   
+    position: absolute;
+    border-radius: 25px;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: transparent;
+}
+.div1{
+    font-size: 1.2em;
+}

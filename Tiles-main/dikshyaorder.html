@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+   
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100, 300, 400, 500, 600, 700, 800, 900&display=swap');
+ 
+/* font-family: 'Big Shoulders Text',geneva; */
+
+ 
+.about-section p,
+.about-section h3 {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    font-family: 'Big Shoulders Text', geneva;
+    font-size: 1.4em;
+}
+ 
+ 
+.row-flex {
+    display: flex;
+    flex-direction: row;
+}
+ 
+.flex-column-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 30px 20px;
+}
+ 
+.btn.btn-primary {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #ffffff;
+    background-color: #CBC3E3;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    border: 0;
+}
+ 
+.btn.btn-primary:hover {
+    background-color: #747474;
+}
+.opening-time,
+.contact-address {
+    flex: 1;
+    margin: 30px 20px;
+    font-size: 1.2em;
+}
+ 
+.form-group p {
+    font-size: 1.2em;
+}
+ 
+.opening-time p span,
+.contact-address p span {
+    display: block;
+}
+
+ 
+ /* CSS for the logo */
+    .logo {
+      float: left;
+      padding: 10px;
+    }
+   
+    .logo img {
+      height: 60px;
+    }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color:black;
+}
+
+.navbar a {
+  float: right;
+  font-size:18px;
+  color: white;
+  text-align:center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 18px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* CSS for the footer */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+   
+    .footer-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+</style>
+
+<body style="background-color:#ffd9cc;">
+<div class="navbar">
+<li class="logo"><img src="C:\xampp\htdocs\website\images\logo2.jpg" alt="Logo"></li>
+<li><a href="Full first.html">HOME</a></li>
+<li><a href="MARBLE.html"> MARBLE</a></li>
+<li><a href="Granite.html">GRANITE</a></li>
+<li><a href="Ceramic.html">CERAMIC</a></li>
+<li><a href="login.php">LOGIN</a></li>
+<li><a href="About us.html">About Us</a></li>
+
+
+</div>
+ 
+ 
+ 
+
+
+</div>
+</head>
+
+    <section class="about-section">
+        <article>
+            <h1 align="center" style="color:black; font-size:30px;"><b>
+               Why choose TILESBAZAAR</b>
+
+            </h1>
+<br><br>
+ 
+<p style="font-size:22px; font-family:georgia; color:black;"><i>
+                Our user-friendly website is designed with you in mind. Ordering your favorite designs has never been easier. With just a few clicks, you can have your chosen tiles on its way to your doorstep. Explore our wide range of tiles. From traditional favorites like Marble to unique specials in Ceramic, there's something to satisfy every demand.
+            </p></i>
+ 
+        </article>
+    </section>
+<br><br><br>
+   </div>
+    <div class="container">
+        <div class="row-flex">
+            <div class="flex-column-form">
+                <h4 style="color:black; font-size:24px; font-family:georgia; ">
+                    Place your Order
+                </h4>
+                
+                    <div class="form-group" style="color:black; font-size:18px;"><i>
+                         
+<p>
+                            Please fill the following details for ordering .</i>
+                        </p>
+ <form action="dikshyaorderentry.php" method="post">
+                      <table border="1" >
+                      <tr>
+                      <td>
+                      <label> Enter your  name </label>
+                  </td>
+                  <td><input type="text" name="first_name"></td>
+                      </tr>
+                      <tr>
+                      <td>
+                      <label>Enter your phone number </label></td>
+                      <td><input type="phone" name="phone"></td>
+                  </tr>
+<tr>
+                      <td>
+                      <label>Enter address </label></td>
+                      <td><input type="text" name="address"></td>
+                  </tr>
+                  <tr>
+<tr>
+                      <td>
+                      <label>Enter your street_no </label></td>
+                      <td><input type="text" name="street_no"></td>
+                  </tr>
+<tr>
+                      <td>
+                      <label>Enter your building_no </label></td>
+                      <td><input type="text" name="building_no"></td>
+                  </tr>
+                   
+
+                      <td>
+                      <label>Enter your pincode </label></td>
+                      <td><input type="text" name="pincode"></td>
+                  </tr>
+<tr>
+                      <td>
+                      <label>Enter your alternate phone  number </label></td>
+                      <td><input type="phone" name="alternate_phone"></td>
+                  </tr>
+<tr>
+                      <td>
+                      <label>Enter your email address </label></td>
+                      <td><input type="email" name="email"></td>
+                  </tr>
+<tr>
+                      <td>
+                      <label> State </label></td>
+                      <td><input type="text" name="item1"></td>
+                  </tr>
+<tr>
+                      <td>
+                      <label>Enter your choice of Stone</label></td>
+                      <td><input type="text" name="item2"></td>
+                  </tr>
+<tr>
+                      <td>
+                      <label>Enter your choice of style </label></td>
+                      <td><input type="text" name="item3"></td>
+                  </tr>
+<tr>
+                      <td>
+                      <label>Enter required quantity</label></td>
+                      <td><input type="text" name="item4"></td>
+                  </tr>
+
+
+<tr>
+                      <td>
+                      <label>Any messages </label></td>
+                      <td><input type="text" name="message"></td>
+                  </tr>
+
+<tr>
+                        <label>Submit</label></td>
+                        <td><input type="submit" name="save" value="Submit"></td>
+                    </tr>
+                     </form>
+                 </table>
+             </div>
+            </div>
+        </div>
+    </div>
+
+            <div class="opening-time">
+                <h4  style="color:black; font-size:24px; font-family:georgia; ">
+                    Opening times
+                </h4>
+                 
+<p>
+                    <span style="color:black; font-size:18px;"><i>Monday—Thursday: 12:00 — 22:00</i></span>
+                    <span style="color:black; font-size:18px;"><i>Friday—Saturday: 14:00 — 23:00</i> </span>
+                    <span style="color:black; font-size:18px;"><i>Sunday: 14:00 — 19:00</i></span>
+                </p>
+ 
+            </div>
+            <div class="contact-address">
+                <h4  style="color:black; font-size:24px; font-family:georgia; ">
+                    Contact
+                </h4>
+                 
+<p>
+                    <span style="color:black; font-size:18px; font-family:georgia;font-size:18px;"><i>8890045673</i></span>
+                    <span style="color:black; font-size:18px;"><i>Jaynagar 4th block</i></span>
+                    <span style="color:black; font-size:18px;"><i>Bangalore, India</i></span>
+                </p>
+ 
+            </div>
+        </div>
+    </div>
+
+ 
+  <footer>
+    <div class="footer-links">
+     
+          <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+          <a href="https://twitter.com/?lang=en-in"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+   <a href="tel:+91-8879067589">Contact No : +91-8879067589</a><br>
+   <a href="#branches"> Branches : </a>
+          <a href="#branches">Jaynagar</a>
+   <a href="#branches">J.P. Nagar</a>
+   <a href="#branches">HSR Layout</a>
+   <a href="#branches">Yelahanka</a>
+         
+
+    </div>
+  </footer>
+ 
+</body>
+ 
+</html>

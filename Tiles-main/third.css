@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    margin: 0;
+}
+.firstdiv{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.727), rgba(0, 0, 0, 0.536)), url(a/granite\ tiles1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.seconddiv{
+    width: 85%;
+    margin: 10px 10px 10px 10px ;
+    padding: 20px 0;
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+}
+.logo{
+    width: 10%;
+    cursor: pointer;
+    float: left;
+}
+.seconddiv ul li{
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+   
+}
+.seconddiv ul li a{
+    text-decoration: none;
+    color: rgb(255, 252, 252);
+    text-transform: uppercase;
+
+}
+.seconddiv ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.seconddiv ul li:hover:after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
